@@ -30,7 +30,7 @@ public enum Permissions {
 	 * @return true if player has permission
 	 */
 	public boolean hasPerm(final Player player) {
-		return player.hasPermission(permission);
+		return player.hasPermission(permission) || player.isOp();
 	}
 
 	/**
